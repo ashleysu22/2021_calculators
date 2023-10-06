@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="calculators.css">
+<script src="calculators.js" defer></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
+<title>Calculators</title>
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<ul>
+				<li><h2> MYCalators </h2></li>
+				<li><a id="bmi_cal" href="file:///C:/Users/User/web_design/bmi_calculator.html"> BMI Calculator </a></li>
+				<li><a id="bmr_cal" href="file:///C:/Users/User/web_design/bmr_calculator.html"> BMR Calculator </a></li>
+				<li><a id="cal" href="file:///C:/Users/User/web_design/calculators.html"> Calculator </a></li>
+				<li><a id="sci_cal" href="file:///C:/Users/User/web_design/sci_calculator.html"> Scientific Calculator </a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="main">
+		<div id="calpage">
+			<h1>Calculator</h1>
+			
+			<div class="calculator">
+				<div class="calculator_screen">
+					<input type="text" name="display" />
+				</div>
+				<div class="calculator_button">
+				<!--first row-->
+					<input type="button" value=" AC" onclick="clearNum()" />
+					<input type="button" value="  .  " onclick="calculate('.')"/>
+					<input type="button" value=" / " onclick="calculate('/')"/>
+					<input type="button" value=" % " onclick="calculate('%')"/>
+				</div>
+				<div class="calculator_button">				
+				<!--second row-->
+					<input type="button" value=" 7  " onclick="calculate(7)" />
+					<input type="button" value=" 8  " onclick="calculate(8)" />
+					<input type="button" value=" 9 " onclick="calculate(9)" />
+					<input type="button" value=" X  " onclick="calculate('*')" />
+				</div>
+				<div class="calculator_button">
+				<!--third row-->
+					<input type="button" value=" 4  " onclick="calculate(4)" />
+					<input type="button" value=" 5  " onclick="calculate(5)" />
+					<input type="button" value=" 6 " onclick="calculate(6)" />
+					<input type="button" value="  -  " onclick="calculate('-')" />
+				</div>
+				<div class="calculator_button">
+				<!--fourth row-->
+					<input type="button" value=" 1  " onclick="calculate(1)" />
+					<input type="button" value=" 2  " onclick="calculate(2)" />
+					<input type="button" value=" 3 " onclick="calculate(3)" />
+					<input type="button" value=" +  " onclick="calculate('+')" />
+				</div>
+				<div class="calculator_button">
+				<!--fifth row-->
+					<input type="button" value="00" onclick="calculate(00)"/>
+					<input type="button" value="0" onclick="calculate(0)" />
+					<input type="button" value="DEL" onclick="deleteNum()" />
+					<input type="button" value="  =  " onclick="result()"/>
+				</div><br>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="footer">
+			<p>©2021Calculators</p>
+		</div>
+	</footer>
+</body>
+</html>

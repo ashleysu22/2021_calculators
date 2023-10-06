@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="calculators.css">
+<script src="bmi.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<title>Calculators</title>
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<ul>
+				<li><h2> MYCalators </h2></li>
+				<li><a id="bmi_cal" href="file:///C:/Users/User/web_design/bmi_calculator.html"> BMI Calculator </a></li>
+				<li><a id="bmr_cal" href="file:///C:/Users/User/web_design/bmr_calculator.html"> BMR Calculator </a></li>
+				<li><a id="cal" href="file:///C:/Users/User/web_design/calculators.html"> Calculator </a></li>
+				<li><a id="sci_cal" href="file:///C:/Users/User/web_design/sci_calculator.html"> Scientific Calculator </a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="main">
+		<div id="bmipage">
+			<h1>BMI (Body Mass Index) Calculator</h1>
+			
+			<p>Height (cm):
+				<input type="text" id="height" /><br>
+				<span id="height_error"></span>
+			</p>
+			
+			<p>Weight (kg):
+				<input type="text" id="weight" /><br>
+				<span id="weight_error"></span>
+			</p>
+			
+			<button id="bmi_btn">Calculate</button>
+		</div>
+		<br>
+		<div  id="bmi_result"></div>
+	</div>
+	
+	<footer>
+		<div class="footer">
+			<p>©2021Calculators</p>
+		</div>
+	</footer>
+</body>
+</html>
